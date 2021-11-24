@@ -1,5 +1,17 @@
 const assertEqual = function(actual, expected) {
- console.log(assertEqual)
+if (actual === expected) {
+  console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
+  }else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`)
+  }
 };
+
+
+
+
+
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
+
+const name = 'Alice';
+console.log(`Hello, ${name}!`);
