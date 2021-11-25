@@ -26,12 +26,12 @@ const assertEqual = function(actual, expected) {
     const countResults = {};
   
     // Loop through the string
-    for (const input of inputString) {
-      if (countResults[input]) {
-        countResults[input] += 1;
+    for (let i = 0; i < inputString.length; i++) {
+      if (countResults[inputString[i]]) {
+        countResults[inputString[i]] += 1;
       } else {
-        if (input !== " ") {
-          countResults[input] = 1;
+        if (inputString[i] !== " ") {
+          countResults[inputString[i]] = 1;
         }
       }
     }
