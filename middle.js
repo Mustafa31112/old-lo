@@ -12,7 +12,7 @@
 const middle = function(array) {
   if (array.length === 1 || array.length === 2 ) {
     return [];
-  } 
+  } //
   if (array.length % 2 === 0 && array.length > 3) {
 return [array[Math.ceil(array.length / 2) - 1], array[Math.ceil(array.length / 2)]];
 } else {
@@ -23,7 +23,7 @@ return [array[Math.ceil(array.length / 2) - 1], array[Math.ceil(array.length / 2
 }
 //Math.ceil
 //addd one to middle index 
-
+//
 
 
 
@@ -35,3 +35,10 @@ console.log(middle([1, 2, 3, 4, 5])) // => [3]
 
 console.log(middle([1, 2, 3, 4])) // => [2, 3]
 console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+
+const myObject = {
+  a: 6,     
+  b: "abc", 
+  c: true,  
+  d: null,  
+};

@@ -16,12 +16,12 @@ const countOnly = function(allItems, itemsToCount) {
     } else {
       results[item] = 1;
     } if (itemsToCount[item]) { 
-      if (results[item]) {
-        results[item] += 1;
-      } else {
-        results[item] = 1;
-      }
-    }
+  if (results[item]) {
+    results[item] += 1;
+  } else {
+    results[item] = 1;
+  }
+}
   
   console.log(item);
   }
